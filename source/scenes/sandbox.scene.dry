@@ -37,16 +37,16 @@ go-to: sandbox_menu
 
 @add1budget
 go-to: edit_budget
-on-arrival: Q.budget += 1;
+on-arrival: budget += 1;
 
 @add10budget
 go-to: edit_budget
-on-arrival: Q.budget += 10;
+on-arrival: budget += 10;
 
 @add100budget
 go-to: edit_budget
-on-arrival: Q.budget += 100;
+on-arrival: budget += 100;
 
 @add500budget
 go-to: edit_budget
-on-arrival: Q.budget += 500;
+on-arrival: budget += 500;
