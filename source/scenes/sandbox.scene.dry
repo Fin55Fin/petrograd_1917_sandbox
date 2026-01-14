@@ -728,10 +728,10 @@ go-to: edit_southwestern
 @edit_romanian
 
 -@edit_friendly_romanian_strength:Set Friendly Soldier Count
--@edit_romaniann_strength: Set Enemy Soldier Count
--@edit_romaniann_discipline: Set Enemy Discipline
--@edit_romaniann_morale: Set Enemy Morale
--@edit_romaniann_supply: Set Enemy Supply
+-@edit_romanian_strength: Set Enemy Soldier Count
+-@edit_romanian_discipline: Set Enemy Discipline
+-@edit_romanian_morale: Set Enemy Morale
+-@edit_romanian_supply: Set Enemy Supply
 -@return_editstrength: Return To Front Selection Menu
 
 @edit_friendly_romanian_strength
@@ -778,7 +778,7 @@ on-arrival: romanian_front_soldiers -= 25;
 go-to: edit_friendly_romanian_strength
 on-arrival: romanian_front_soldiers -= 50;
 
-@edit_romaniann_strength
+@edit_romanian_strength
 
 -@add_5_enemy_romanian: Add 5 thousand enemy troops
 -@add_10_enemy_romanian: Add 10 thousand enemy troops
@@ -822,7 +822,7 @@ on-arrival: romanian_front_enemy_soldiers -= 25;
 go-to: edit_romanian_strength
 on-arrival: romanian_front_enemy_soldiers -= 50;
 
-@edit_romaniann_discipline
+@edit_romanian_discipline
 
 -@set_romanian_discipline_min: Set Minimum Discipline
 -@set_romanian_discipline_quarter: Set Quarter Discipline
@@ -851,7 +851,7 @@ on-arrival: romanian_enemy_discipline = 0.75;
 go-to: edit_romanian_discipline
 on-arrival: romanian_enemy_discipline = 1.0;
 
-@edit_romaniann_morale
+@edit_romanian_morale
 
 -@set_romanian_morale_min: Set Minimum Morale
 -@set_romanian_morale_quarter: Set Quarter Morale
@@ -880,7 +880,7 @@ on-arrival: romanian_enemy_morale = 0.75;
 go-to: edit_romanian_discipline
 on-arrival: romanian_enemy_morale = 1.0;
 
-@edit_romaniann_supply
+@edit_romanian_supply
 
 -@set_romanian_supply_min: Set Minimum Suppply
 -@set_romanian_supply_quarter: Set Quarter Supply
