@@ -1105,6 +1105,9 @@ go-to: edit_friendlies
 @return_military
 go-to: edit_military
 
+@return_editstrength
+go-to: edit_strength
+
 @sandbox_back
 go-to: sandbox_menu
 
