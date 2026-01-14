@@ -7,13 +7,13 @@ go-to: sandbox_menu
 
 @sandbox_menu
 
-  //- @edit_resources
-  - @editbudget: Edit The Budget
-  //- @edit_party_relations
-  //- @edit_military
-  //- @edit_paramilitaries
+  - @edit_resources: Edit Party Resources
+  - @edit_budget: Edit The Budget
+  - @edit_party_relations: Edit Party Relations
+  - @edit_military: Edit Military
+  - @edit_paramilitaries: Edit Paramilitaries
 
-//@edit_resources
+@edit_resources
 
   - @add1resources
   - @add10resources
@@ -36,17 +36,17 @@ go-to: sandbox_menu
   - @remove500budget
 
 @add1budget
-go-to: editbudget
+go-to: edit_budget
 on-arrival: budget += 1;
 
 @add10budget
-go-to: editbudget
+go-to: edit_budget
 on-arrival: budget += 10;
 
 @add100budget
-go-to: editbudget
+go-to: edit_budget
 on-arrival: budget += 100;
 
 @add500budget
-go-to: editbudget
+go-to: edit_budget
 on-arrival: budget += 500;
