@@ -165,7 +165,7 @@ on-arrival: supply_quality = 1.0;
 -@return_military: Back to Military Tab
 
 
-@edit_northwest
+@edit_northwestern
 
 -@edit_friendly_northwestern_strength:Set Friendly Soldier Count
 -@edit_northwestern_strength: Set Enemy Soldier Count
@@ -507,7 +507,7 @@ on-arrival: western_enemy_morale = 0.75;
 go-to: edit_western_discipline
 on-arrival: western_enemy_morale = 1.0;
 
-@edit_westernern_supply
+@edit_western_supply
 
 -@set_western_supply_min: Set Minimum Suppply
 -@set_western_supply_quarter: Set Quarter Supply
@@ -539,7 +539,7 @@ on-arrival: western_enemy_supply_quality = 1.0;
 @return_western
 go-to: edit_western
 
-@edit_southwest
+@edit_southwestern
 
 -@edit_friendly_southwestern_strength:Set Friendly Soldier Count
 -@edit_southwestern_strength: Set Enemy Soldier Count
