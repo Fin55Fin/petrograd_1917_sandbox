@@ -62,41 +62,41 @@ on-arrival: budget -= 500;
 
 @edit_friendlies
 
--@edit_friendly_discipline
--@edit_friendly_morale
--@edit_friendly_supply
--@return_military
+-@edit_friendly_discipline: Edit Friendly Discipline
+-@edit_friendly_morale: Edit Friendly Morale
+-@edit_friendly_supply: Edit Friendly Supplies
+-@return_military: Back to Military Tab
 
 @edit_strength
 
--@edit_northwest
--@edit_west
--@edit_southwest
--@edit_romania
--@edit_caucauses
--@edit_allfronts
--@return_military
+-@edit_northwest: Edit Northwest Front
+-@edit_west: Edit West Front
+-@edit_southwest: Edit Southwest Front
+-@edit_romania: Edit Romanian Front
+-@edit_caucauses: Edit Caucauses Front
+-@edit_allfronts: Edit All Fronts at Once
+-@return_military: Back to Military Tab
 
 @edit_frontX
 
--@edit_friendly_frontX_strength
--@edit_frontX_strength
--@edit_frontX_discipline
--@edit_frontX_morale
--@edit_frontX_supply
--@return_editstrength
+-@edit_friendly_frontX_strength:Set Friendly Soldier Count
+-@edit_frontX_strength: Set Enemy Soldier Count
+-@edit_frontX_discipline: Set Enemy Discipline
+-@edit_frontX_morale: Set Enemy Morale
+-@edit_frontX_supply: Set Enemy Supply
+-@return_editstrength: Return To Front Selection Menu
 
 @edit_friendly_frontX_strength
 
--@add_5_friendly_frontX
--@add_10_friendly_frontX
--@add_25_friendly_frontX
--@add_50_friendly_frontX
--@remove_5_friendly_frontX
--@remove_10_friendly_frontX
--@remove_25_friendly_frontX
--@remove_50_friendly_frontX
--@return_frontX
+-@add_5_friendly_frontX: Add 5 thousand friendly troops
+-@add_10_friendly_frontX: Add 10 thousand friendly troops
+-@add_25_friendly_frontX: Add 25 thousand friendly troops
+-@add_50_friendly_frontX: Add 50 thousand friendly troops
+-@remove_5_friendly_frontX: Remove 5 thousand friendly troops
+-@remove_10_friendly_frontX: Remove 10 thousand friendly troops
+-@remove_25_friendly_frontX: Remove 25 thousand friendly troops
+-@remove_50_friendly_frontX: Remove 50 thousand friendly troops
+-@return_frontX: Return to Front Menu
 
 @add_5_friendly_frontX
 go-to: edit_friendly_frontX_strength
@@ -129,6 +129,143 @@ on-arrival: frontX_front_soldiers -= 25;
 @remove_50_friendly_frontX
 go-to: edit_friendly_frontX_strength
 on-arrival: frontX_front_soldiers -= 50;
+
+@edit_frontX_strength
+
+-@add_5_enemy_frontX: Add 5 thousand enemy troops
+-@add_10_enemy_frontX: Add 10 thousand enemy troops
+-@add_25_enemy_frontX: Add 25 thousand enemy troops
+-@add_50_enemy_frontX: Add 50 thousand enemy troops
+-@remove_5_enemy_frontX: Remove 5 thousand enemy troops
+-@remove_10_enemy_frontX: Remove 10 thousand enemy troops
+-@remove_25_enemy_frontX: Remove 25 thousand enemy troops
+-@remove_50_enemy_frontX: Remove 50 thousand enemy troops
+-@return_frontX: Return to Front Menu
+
+@add_5_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers += 5;
+
+@add_10_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers += 10;
+
+@add_25_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers += 25;
+
+@add_50_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers += 50;
+
+@remove_5_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers -= 5;
+
+@remove_10_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers -= 10;
+
+@remove_25_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers -= 25;
+
+@remove_50_enemy_frontX
+go-to: edit_frontX_strength
+on-arrival: frontX_front_enemy_soldiers -= 50;
+
+@edit_frontX_discipline
+
+-@set_frontX_discipline_min: Set Minimum Discipline
+-@set_frontX_discipline_quarter: Set Quarter Discipline
+-@set_frontX_discipline_half: Set Half Discipline
+-@set_frontX_discipline_threequarters: Set Three Quarters Discipline
+-@set_frontX_discipline_max: Set Max Discipline
+-@return_frontX: Return to Front Menu
+
+@set_frontX_discipline_min
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_discipline = 0;
+
+@set_frontX_discipline_quarter
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_discipline = 0.25;
+
+@set_frontX_discipline_half
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_discipline = 0.5;
+
+@set_frontX_discipline_threequarters
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_discipline = 0.75;
+
+@set_frontX_discipline_max
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_discipline = 1.0;
+
+@edit_frontX_morale
+
+-@set_frontX_morale_min: Set Minimum Morale
+-@set_frontX_morale_quarter: Set Quarter Morale
+-@set_frontX_morale_half: Set Half Morale
+-@set_frontX_morale_threequarters: Set Three Quarters Morale
+-@set_frontX_morale_max: Set Max Morale
+-@return_frontX: Return to Front Menu
+
+@set_frontX_morale_min
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_morale = 0.0;
+
+@set_frontX_morale_quarter
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_morale = 0.25;
+
+@set_frontX_morale_half
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_morale = 0.5;
+
+@set_frontX_morale_threequarters
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_morale = 0.75;
+
+@set_frontX_morale_max
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_morale = 1.0;
+
+@edit_frontX_supply
+
+-@set_frontX_supply_min: Set Minimum Suppply
+-@set_frontX_supply_quarter: Set Quarter Supply
+-@set_frontX_supply_half: Set Half Supply
+-@set_frontX_supply_threequarters: Set Three Quarters Supply
+-@set_frontX_supply_max: Set Max Supply
+-@return_frontX: Return to Front Menu
+
+@set_frontX_supply_min
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_supply_quality = 0.0;
+
+@set_frontX_supply_quarter
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_supply_quality = 0.25;
+
+@set_frontX_supply_half
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_supply_quality = 0.5;
+
+@set_frontX_supply_threequarters
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_supply_quality = 0.75;
+
+@set_frontX_supply_max
+go-to: edit_frontX_discipline
+on-arrival: frontX_enemy_supply_quality = 1.0;
+
+
+
+
+@return_frontX
+go-to: edit_frontX
 
 @return_military
 go-to: edit_military
