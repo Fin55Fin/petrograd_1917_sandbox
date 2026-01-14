@@ -59,7 +59,7 @@ on-arrival: budget -= 500;
 
 - @edit_friendlies: Edit Friendly Stats
 - @edit_strength: Edit Front Strength
- -@sandbox_back
+ -@sandbox_back: Back to Sandbox Menu
 
 @edit_friendlies
 
