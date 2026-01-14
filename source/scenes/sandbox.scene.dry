@@ -54,7 +54,7 @@ on-arrival: budget -= 100;
 go-to: edit_budget
 on-arrival: budget -= 500;
 
-@sandbox_Back
+@sandbox_back
 go-to: sandbox_menu
 
 @return_home
