@@ -5,7 +5,7 @@ go-to: sandbox_menu
 
 = Sandbox Menu
 
-  @sandbox
+  @sandbox_menu
 
   - @edit_resources
   - @edit_budget
