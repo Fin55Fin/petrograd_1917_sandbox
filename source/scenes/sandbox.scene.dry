@@ -1,11 +1,11 @@
-title: sandboxmenu
+title: sandbox
 new-page: true
 is-special: true
-go-to: sandboxmenu
+go-to: sandbox
 
 = Sandbox
 
-  @sandboxmenu
+  @sandbox
 
   - @edit_resources
   - @edit_budget
