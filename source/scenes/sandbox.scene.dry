@@ -60,9 +60,79 @@ on-arrival: budget -= 500;
 - @edit_friendlies: Edit Friendly Stats
 - @edit_strength: Edit Front Strength
 
+@edit_friendlies
 
-// edit friendlies = friendly disxipline, supply etc
-// edit strength = fromt atrengths, dofdeeent tabs for each front 
+-@edit_friendly_discipline
+-@edit_friendly_morale
+-@edit_friendly_supply
+-@return_military
+
+@edit_strength
+
+-@edit_northwest
+-@edit_west
+-@edit_southwest
+-@edit_romania
+-@edit_caucauses
+-@edit_allfronts
+-@return_military
+
+@edit_frontX
+
+-@edit_friendly_frontX_strength
+-@edit_frontX_strength
+-@edit_frontX_discipline
+-@edit_frontX_morale
+-@edit_frontX_supply
+-@return_editstrength
+
+@edit_friendly_frontX_strength
+
+-@add_5_friendly_frontX
+-@add_10_friendly_frontX
+-@add_25_friendly_frontX
+-@add_50_friendly_frontX
+-@remove_5_friendly_frontX
+-@remove_10_friendly_frontX
+-@remove_25_friendly_frontX
+-@remove_50_friendly_frontX
+-@return_frontX
+
+@add_5_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers += 5;
+
+@add_10_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers += 10;
+
+@add_25_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers += 25;
+
+@add_50_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers += 50;
+
+@remove_5_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers -= 5;
+
+@remove_10_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers -= 10;
+
+@remove_25_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers -= 25;
+
+@remove_50_friendly_frontX
+go-to: edit_friendly_frontX_strength
+on-arrival: frontX_front_soldiers -= 50;
+
+@return_military
+go-to: edit_military
+
 @sandbox_back
 go-to: sandbox_menu
 
