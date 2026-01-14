@@ -7,7 +7,8 @@ go-to: sandbox_menu
 
 @sandbox_menu
 
-- @edit_budget: Edit The Budget
+- @edit_budget: Edit the Budget
+- @edit_military: Edit the Military
 - @return_home: Return to Home
 
 @edit_budget
@@ -54,6 +55,14 @@ on-arrival: budget -= 100;
 go-to: edit_budget
 on-arrival: budget -= 500;
 
+@edit_military
+
+- @edit_friendlies: Edit Friendly Stats
+- @edit_strength: Edit Front Strength
+
+
+// edit friendlies = friendly disxipline, supply etc
+// edit strength = fromt atrengths, dofdeeent tabs for each front 
 @sandbox_back
 go-to: sandbox_menu
 
