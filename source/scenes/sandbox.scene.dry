@@ -161,7 +161,6 @@ on-arrival: supply_quality = 1.0;
 -@edit_southwestern: Edit Southwestern Front
 -@edit_romanian: Edit Romanian Front
 -@edit_caucauses: Edit Caucauses Front
--@edit_allfronts: Edit All Fronts at Once
 -@return_military: Back to Military Tab
 
 
