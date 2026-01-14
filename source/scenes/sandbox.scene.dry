@@ -14,6 +14,7 @@ go-to: sandbox_menu
   - @edit_paramilitaries
 
 @edit_resources
+
   - @add1resources
   - @add10resources
   - @add100resources
@@ -21,8 +22,10 @@ go-to: sandbox_menu
   - @remove1resources
   - @remove10resources
   - @remove100resources
+  - @remove500resources
 
 @edit_budget
+
   - @add1budget
   - @add10budget
   - @add100budget
