@@ -59,6 +59,7 @@ on-arrival: budget -= 500;
 
 - @edit_friendlies: Edit Friendly Stats
 - @edit_strength: Edit Front Strength
+ -@sandbox_back
 
 @edit_friendlies
 
@@ -98,11 +99,11 @@ on-arrival: discipline = 1.0;
 
 @edit_friendly_morale
 
--@set_morale_min: Set Minimum Discipline
--@set_morale_quarter: Set Quarter Discipline
--@set_morale_half: Set Half Discipline
--@set_morale_threequarters: Set Three Quarters Discipline
--@set_morale_max: Set Max Discipline
+-@set_morale_min: Set Minimum Morale
+-@set_morale_quarter: Set Quarter Morale
+-@set_morale_half: Set Half Morale
+-@set_morale_threequarters: Set Three Quarters Morale
+-@set_morale_max: Set Max Morale
 -@return_friendlies: Return to Friendly Menu
 
 @set_morale_min
@@ -127,11 +128,11 @@ on-arrival: morale = 1.0;
 
 @edit_friendly_supply
 
--@set_supply_min: Set Minimum Discipline
--@set_supply_quarter: Set Quarter Discipline
--@set_supply_half: Set Half Discipline
--@set_supply_threequarters: Set Three Quarters Discipline
--@set_supply_max: Set Max Discipline
+-@set_supply_min: Set Minimum Supply
+-@set_supply_quarter: Set Quarter Supply
+-@set_supply_half: Set Half Supply
+-@set_supply_threequarters: Set Three Quarters Supply
+-@set_supply_max: Set Max Supply
 -@return_friendlies: Return to Friendly Menu
 
 @set_supply_min
@@ -156,7 +157,7 @@ on-arrival: supply_quality = 1.0;
 
 @edit_strength
 
--@edit_northwestern: Edit Northwestern Front
+-@edit_northern: Edit northern Front
 -@edit_western: Edit Western Front
 -@edit_southwestern: Edit Southwestern Front
 -@edit_romanian: Edit Romanian Front
@@ -164,192 +165,192 @@ on-arrival: supply_quality = 1.0;
 -@return_military: Back to Military Tab
 
 
-@edit_northwestern
+@edit_northern
 
--@edit_friendly_northwestern_strength:Set Friendly Soldier Count
--@edit_northwestern_strength: Set Enemy Soldier Count
--@edit_northwestern_discipline: Set Enemy Discipline
--@edit_northwestern_morale: Set Enemy Morale
--@edit_northwestern_supply: Set Enemy Supply
+-@edit_friendly_northern_strength:Set Friendly Soldier Count
+-@edit_northern_strength: Set Enemy Soldier Count
+-@edit_northern_discipline: Set Enemy Discipline
+-@edit_northern_morale: Set Enemy Morale
+-@edit_northern_supply: Set Enemy Supply
 -@return_editstrength: Return To Front Selection Menu
 
-@edit_friendly_northwestern_strength
+@edit_friendly_northern_strength
 
--@add_5_friendly_northwestern: Add 5 thousand friendly troops
--@add_10_friendly_northwestern: Add 10 thousand friendly troops
--@add_25_friendly_northwestern: Add 25 thousand friendly troops
--@add_50_friendly_northwestern: Add 50 thousand friendly troops
--@remove_5_friendly_northwestern: Remove 5 thousand friendly troops
--@remove_10_friendly_northwestern: Remove 10 thousand friendly troops
--@remove_25_friendly_northwestern: Remove 25 thousand friendly troops
--@remove_50_friendly_northwestern: Remove 50 thousand friendly troops
--@return_northwestern: Return to Front Menu
+-@add_5_friendly_northern: Add 5 thousand friendly troops
+-@add_10_friendly_northern: Add 10 thousand friendly troops
+-@add_25_friendly_northern: Add 25 thousand friendly troops
+-@add_50_friendly_northern: Add 50 thousand friendly troops
+-@remove_5_friendly_northern: Remove 5 thousand friendly troops
+-@remove_10_friendly_northern: Remove 10 thousand friendly troops
+-@remove_25_friendly_northern: Remove 25 thousand friendly troops
+-@remove_50_friendly_northern: Remove 50 thousand friendly troops
+-@return_northern: Return to Front Menu
 
-@add_5_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers += 5;
+@add_5_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers += 5;
 
-@add_10_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers += 10;
+@add_10_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers += 10;
 
-@add_25_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers += 25;
+@add_25_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers += 25;
 
-@add_50_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers += 50;
+@add_50_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers += 50;
 
-@remove_5_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers -= 5;
+@remove_5_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers -= 5;
 
-@remove_10_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers -= 10;
+@remove_10_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers -= 10;
 
-@remove_25_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers -= 25;
+@remove_25_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers -= 25;
 
-@remove_50_friendly_northwestern
-go-to: edit_friendly_northwestern_strength
-on-arrival: northwestern_front_soldiers -= 50;
+@remove_50_friendly_northern
+go-to: edit_friendly_northern_strength
+on-arrival: northern_front_soldiers -= 50;
 
-@edit_northwestern_strength
+@edit_northern_strength
 
--@add_5_enemy_northwestern: Add 5 thousand enemy troops
--@add_10_enemy_northwestern: Add 10 thousand enemy troops
--@add_25_enemy_northwestern: Add 25 thousand enemy troops
--@add_50_enemy_northwestern: Add 50 thousand enemy troops
--@remove_5_enemy_northwestern: Remove 5 thousand enemy troops
--@remove_10_enemy_northwestern: Remove 10 thousand enemy troops
--@remove_25_enemy_northwestern: Remove 25 thousand enemy troops
--@remove_50_enemy_northwestern: Remove 50 thousand enemy troops
--@return_northwestern: Return to Front Menu
+-@add_5_enemy_northern: Add 5 thousand enemy troops
+-@add_10_enemy_northern: Add 10 thousand enemy troops
+-@add_25_enemy_northern: Add 25 thousand enemy troops
+-@add_50_enemy_northern: Add 50 thousand enemy troops
+-@remove_5_enemy_northern: Remove 5 thousand enemy troops
+-@remove_10_enemy_northern: Remove 10 thousand enemy troops
+-@remove_25_enemy_northern: Remove 25 thousand enemy troops
+-@remove_50_enemy_northern: Remove 50 thousand enemy troops
+-@return_northern: Return to Front Menu
 
-@add_5_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers += 5;
+@add_5_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers += 5;
 
-@add_10_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers += 10;
+@add_10_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers += 10;
 
-@add_25_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers += 25;
+@add_25_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers += 25;
 
-@add_50_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers += 50;
+@add_50_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers += 50;
 
-@remove_5_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers -= 5;
+@remove_5_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers -= 5;
 
-@remove_10_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers -= 10;
+@remove_10_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers -= 10;
 
-@remove_25_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers -= 25;
+@remove_25_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers -= 25;
 
-@remove_50_enemy_northwestern
-go-to: edit_northwestern_strength
-on-arrival: northwestern_front_enemy_soldiers -= 50;
+@remove_50_enemy_northern
+go-to: edit_northern_strength
+on-arrival: northern_front_enemy_soldiers -= 50;
 
-@edit_northwestern_discipline
+@edit_northern_discipline
 
--@set_northwestern_discipline_min: Set Minimum Discipline
--@set_northwestern_discipline_quarter: Set Quarter Discipline
--@set_northwestern_discipline_half: Set Half Discipline
--@set_northwestern_discipline_threequarters: Set Three Quarters Discipline
--@set_northwestern_discipline_max: Set Max Discipline
--@return_northwestern: Return to Front Menu
+-@set_northern_discipline_min: Set Minimum Discipline
+-@set_northern_discipline_quarter: Set Quarter Discipline
+-@set_northern_discipline_half: Set Half Discipline
+-@set_northern_discipline_threequarters: Set Three Quarters Discipline
+-@set_northern_discipline_max: Set Max Discipline
+-@return_northern: Return to Front Menu
 
-@set_northwestern_discipline_min
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_discipline = 0;
+@set_northern_discipline_min
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_discipline = 0;
 
-@set_northwestern_discipline_quarter
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_discipline = 0.25;
+@set_northern_discipline_quarter
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_discipline = 0.25;
 
-@set_northwestern_discipline_half
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_discipline = 0.5;
+@set_northern_discipline_half
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_discipline = 0.5;
 
-@set_northwestern_discipline_threequarters
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_discipline = 0.75;
+@set_northern_discipline_threequarters
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_discipline = 0.75;
 
-@set_northwestern_discipline_max
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_discipline = 1.0;
+@set_northern_discipline_max
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_discipline = 1.0;
 
-@edit_northwestern_morale
+@edit_northern_morale
 
--@set_northwestern_morale_min: Set Minimum Morale
--@set_northwestern_morale_quarter: Set Quarter Morale
--@set_northwestern_morale_half: Set Half Morale
--@set_northwestern_morale_threequarters: Set Three Quarters Morale
--@set_northwestern_morale_max: Set Max Morale
--@return_northwestern: Return to Front Menu
+-@set_northern_morale_min: Set Minimum Morale
+-@set_northern_morale_quarter: Set Quarter Morale
+-@set_northern_morale_half: Set Half Morale
+-@set_northern_morale_threequarters: Set Three Quarters Morale
+-@set_northern_morale_max: Set Max Morale
+-@return_northern: Return to Front Menu
 
-@set_northwestern_morale_min
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_morale = 0.0;
+@set_northern_morale_min
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_morale = 0.0;
 
-@set_northwestern_morale_quarter
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_morale = 0.25;
+@set_northern_morale_quarter
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_morale = 0.25;
 
-@set_northwestern_morale_half
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_morale = 0.5;
+@set_northern_morale_half
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_morale = 0.5;
 
-@set_northwestern_morale_threequarters
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_morale = 0.75;
+@set_northern_morale_threequarters
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_morale = 0.75;
 
-@set_northwestern_morale_max
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_morale = 1.0;
+@set_northern_morale_max
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_morale = 1.0;
 
-@edit_northwestern_supply
+@edit_northern_supply
 
--@set_northwestern_supply_min: Set Minimum Suppply
--@set_northwestern_supply_quarter: Set Quarter Supply
--@set_northwestern_supply_half: Set Half Supply
--@set_northwestern_supply_threequarters: Set Three Quarters Supply
--@set_northwestern_supply_max: Set Max Supply
--@return_northwestern: Return to Front Menu
+-@set_northern_supply_min: Set Minimum Suppply
+-@set_northern_supply_quarter: Set Quarter Supply
+-@set_northern_supply_half: Set Half Supply
+-@set_northern_supply_threequarters: Set Three Quarters Supply
+-@set_northern_supply_max: Set Max Supply
+-@return_northern: Return to Front Menu
 
-@set_northwestern_supply_min
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_supply_quality = 0.0;
+@set_northern_supply_min
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_supply_quality = 0.0;
 
-@set_northwestern_supply_quarter
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_supply_quality = 0.25;
+@set_northern_supply_quarter
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_supply_quality = 0.25;
 
-@set_northwestern_supply_half
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_supply_quality = 0.5;
+@set_northern_supply_half
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_supply_quality = 0.5;
 
-@set_northwestern_supply_threequarters
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_supply_quality = 0.75;
+@set_northern_supply_threequarters
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_supply_quality = 0.75;
 
-@set_northwestern_supply_max
-go-to: edit_northwestern_discipline
-on-arrival: northwestern_enemy_supply_quality = 1.0;
+@set_northern_supply_max
+go-to: edit_northern_discipline
+on-arrival: northern_enemy_supply_quality = 1.0;
 
-@return_northwestern
-go-to: edit_northwestern
+@return_northern
+go-to: edit_northern
 
 @edit_western
 
