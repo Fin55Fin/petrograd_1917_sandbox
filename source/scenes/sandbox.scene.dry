@@ -1,9 +1,9 @@
 title: sandbox
 new-page: true
 is-special: true
-go-to: sandbox
+go-to: sandbox_menu
 
-= Sandbox
+= Sandbox Menu
 
   @sandbox
 
