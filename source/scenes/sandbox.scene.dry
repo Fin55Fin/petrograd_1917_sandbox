@@ -24,7 +24,7 @@ go-to: sandbox_menu
   - @remove100resources
   - @remove500resources
 
-@editbudget
+@edit_budget
 
   - @add1budget: Add 1 to the Budget
   - @add10budget: Add 10 to the Budget
