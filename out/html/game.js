@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: Petrograd 1917" + '_' + "Autumn Chen";
+  var TITLE = "Social Democracy: Petrograd 1917" + '_' + "Autumn Chen, sandbox mod by Fin55";
 
   window.showStats = function() {
     if (window.dendryUI.dendryEngine.state.sceneId.startsWith('library')) {
