@@ -354,10 +354,10 @@ go-to: edit_northwestern
 @edit_western
 
 -@edit_friendly_western_strength:Set Friendly Soldier Count
--@edit_westernern_strength: Set Enemy Soldier Count
--@edit_westernern_discipline: Set Enemy Discipline
--@edit_westernern_morale: Set Enemy Morale
--@edit_westernern_supply: Set Enemy Supply
+-@edit_western_strength: Set Enemy Soldier Count
+-@edit_western_discipline: Set Enemy Discipline
+-@edit_western_morale: Set Enemy Morale
+-@edit_western_supply: Set Enemy Supply
 -@return_editstrength: Return To Front Selection Menu
 
 @edit_friendly_western_strength
@@ -404,7 +404,7 @@ on-arrival: western_front_soldiers -= 25;
 go-to: edit_friendly_western_strength
 on-arrival: western_front_soldiers -= 50;
 
-@edit_westernern_strength
+@edit_western_strength
 
 -@add_5_enemy_western: Add 5 thousand enemy troops
 -@add_10_enemy_western: Add 10 thousand enemy troops
@@ -448,7 +448,7 @@ on-arrival: western_front_enemy_soldiers -= 25;
 go-to: edit_western_strength
 on-arrival: western_front_enemy_soldiers -= 50;
 
-@edit_westernern_discipline
+@edit_western_discipline
 
 -@set_western_discipline_min: Set Minimum Discipline
 -@set_western_discipline_quarter: Set Quarter Discipline
@@ -477,7 +477,7 @@ on-arrival: western_enemy_discipline = 0.75;
 go-to: edit_western_discipline
 on-arrival: western_enemy_discipline = 1.0;
 
-@edit_westernern_morale
+@edit_western_morale
 
 -@set_western_morale_min: Set Minimum Morale
 -@set_western_morale_quarter: Set Quarter Morale
