@@ -8,6 +8,7 @@ go-to: sandbox_menu
 @sandbox_menu
 
 - @edit_budget: Edit The Budget
+- @return_home: Return to Home
 
 @edit_budget
 
@@ -19,6 +20,7 @@ go-to: sandbox_menu
 - @remove10budget: Remove 10 Budget
 - @remove100budget: Remove 100 Budget
 - @remove500budget: Remove 500 Budget
+- @sandbox_back: Back to Sandbox
 
 @add1budget
 go-to: edit_budget
@@ -51,4 +53,10 @@ on-arrival: budget -= 100;
 @remove500budget
 go-to: edit_budget
 on-arrival: budget -= 500;
+
+@sandbox_Back
+go-to: sandbox_menu
+
+@return_home
+go-to: root
 
