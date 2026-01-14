@@ -21,7 +21,6 @@ go-to: sandbox_menu
   - @remove1resources
   - @remove10resources
   - @remove100resources
-  // - @remove500resources
 
 @edit_budget
   - @add1budget
