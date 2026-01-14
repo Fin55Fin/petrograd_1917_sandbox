@@ -7,22 +7,7 @@ go-to: sandbox_menu
 
 @sandbox_menu
 
-//- @edit_resources: Edit Party Resources
 - @edit_budget: Edit The Budget
-//- @edit_party_relations: Edit Party Relations
-//- @edit_military: Edit Military
-//- @edit_paramilitaries: Edit Paramilitaries
-
-@edit_resources
-
-//- @add1resources
-//- @add10resources
-//- @add100resources
-//- @add500resources
-//- @remove1resources
-//- @remove10resources
-//- @remove100resources
-//- @remove500resources
 
 @edit_budget
 
