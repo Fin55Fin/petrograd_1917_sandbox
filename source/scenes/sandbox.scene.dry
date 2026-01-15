@@ -1315,7 +1315,7 @@ go-to: sandbox_menu
 
 @add10_km_relations
 go-to: edit_km_relations
-on-arrival: K_m_relation += 10;
+on-arrival: k_m_relation += 10;
 
 @return_home
 go-to: root
