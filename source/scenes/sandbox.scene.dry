@@ -10,7 +10,7 @@ go-to: sandbox_menu
 - @edit_budget: Edit the Budget
 - @edit_resources: Edit Party Resources
 - @edit_military: Edit the Military
-- @edit_relations
+- @edit_relations: Edit Relations
 - @return_home: Return to Home
 
 @edit_budget
