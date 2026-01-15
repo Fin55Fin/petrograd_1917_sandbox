@@ -1300,7 +1300,6 @@ go-to: edit_strength
 
 @edit_relations
 
--@edit_intrelations: Edit International Relations
 -@edit_k_relations: Edit Party Relations (For Kadet0
 
 @edit_k_relations
