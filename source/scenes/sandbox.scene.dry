@@ -62,6 +62,7 @@ on-arrival: budget -= 500;
 -@edit_sr_resources: Edit SR Resources
 -@edit_m_resources: Edit Menshevik Resources
 -@edit_b_resources: Edit Bolshevik Resources
+-@sandbox_back: Back to Sandbox
 
 @edit_k_resources
 
