@@ -347,7 +347,7 @@ on-arrival: supply_quality = 1.0;
 
 @edit_strength
 
--@edit_northern: Edit northern Front
+-@edit_northern: Edit Northern Front
 -@edit_western: Edit Western Front
 -@edit_southwestern: Edit Southwestern Front
 -@edit_romanian: Edit Romanian Front
