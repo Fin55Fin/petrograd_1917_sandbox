@@ -1301,10 +1301,8 @@ go-to: edit_strength
 @edit_relations
 
 -@edit_inter_relations: Edit International Relations 
--@edit_k_relations: Edit Relations for the Kadets
--@edit_sr_relations: Edit Relations for the SR's
--@edit_m_relations: Edit Relations for the Mensheviks
--@edit_b_relations: Edit Relations for the Bolsheviks
+-@add_party_relations: Add Party Relations
+-@removeparty_relations: Remove Party Relations
 -@sandbox_back: Return to Sandbox Menu
 
 @edit_inter_relations
@@ -1333,101 +1331,83 @@ on-arrival: usa_relation -= 10;
 
 
 
-@edit_k_relations
+@add_party_relations
 
 -@add_kc_relations: Add Kadet-Conservative Relations
--@remove_kc_relations: Remove Kadet-Conservative Relations
 -@add_km_relations: Add Kadet-Menshevik Relations
--@remove_km_relations: Remove Kadet-Menshevik Relations
 -@add_ksr_relations: Add Kadet-SR Relations
--@remove_ksr_relations: Remove Kadet-SR Relations
 -@add_kb_relations: Add Kadet-Bolshevik Relations
--@remove_kb_relations: Remove Kadet-Bolshevik Relations
--@return_relations: Return to Relations Page
-
-@edit_sr_relations
-
--@add_ksr_relations: Add SR-Kadet Relations
--@remove_ksr_relations: Remove SR-Kadet Relations
 -@add_srm_relations: Add SR-Menshevik Relations
--@remove_srm_relations: Remove SR-Menshevik Relations
 -@add_srb_relations: Add SR-Bolshevik Relations
--@remove_srb_relations: Remove SR-Bolshevik Relations
--@return_relations: Return to Relations Page
-
-@edit_m_relations
-
--@add_km_relations: Add Menshevik-Kadet Relations
--@remove_km_relations: Remove Menshevik-Kadet Relations
--@add_srm_relations: Add Menshevik-SR Relations
--@remove_srm_relations: Remove Menshevik-SR Relations
 -@add_mb_relations: Add Menshevik-Bolshevik Relations
--@remove_mb_relations: Remove Menshevik-Bolshevik Relations
 -@return_relations: Return to Relations Page
 
-@edit_b_relations
+@remove_party_relations
 
--@add_kb_relations: Add Bolshevik-Kadet Relations
--@remove_kb_relations: Remove Bolshevik-Kadet Relations
--@add_srb_relations: Add Bolshevik-SR Relations
--@remove_srb_relations: Remove Bolshevik-SR Relations
--@add_mb_relations: Add Bolshevik-Menshevik Relations
--@remove_mb_relations: Remove Bolshevik-Menshevik Relations
+-@remove_kc_relations: Remove Kadet-Conservative Relations
+-@remove_ksr_relations: Remove Kadet-SR Relations
+-@remove_km_relations: Remove Kadet-Menshevik Relations
+-@remove_kb_relations: Remove Kadet-Bolshevik Relations
+-@remove_srm_relations: Remove SR-Menshevik Relations
+-@remove_srb_relations: Remove SR-Bolshevik Relations
+-@remove_mb_relations: Remove Menshevik-Bolshevik Relations
 -@return_relations: Return to Relations Page
 
 
 @add_kc_relations
-go-to: edit_k_relations
+go-to: add_party_relations
 on-arrival: k_conservative_relation += 10;
 
 @remove_kc_relations
-go-to: edit_k_relations
+go-to: remove_party_relations
 on-arrival: k_conservative_relation -= 10;
 
 @add_km_relations
-go-to: edit_k_relations
+go-to: add_party_relations
 on-arrival: m_k_relation += 10;
 
 @remove_km_relations
-go-to: edit_k_relations
+go-to: remove_party_relations
 on-arrival: m_k_relation -= 10;
 
 @add_ksr_relations
-go-to: edit_k_relations
+go-to: add_party_relations
 on-arrival: sr_k_relation += 10;
 
 @remove_ksr_relations
-go-to: edit_k_relations
+go-to: remove_party_relations
 on-arrival: sr_k_relation -= 10;
 
 @add_kb_relations
-go-to: edit_k_relations
+go-to: add_party_relations
 on-arrival: b_k_relation += 10;
 
 @remove_kb_relations
-go-to: edit_k_relations
+go-to: remove_party_relations
 on-arrival: b_k_relation -= 10;
 
 @add_srm_relations
-go-to: edit_sr_relations
+go-to: add_party_relations
 on-arrival: m_sr_relation += 10;
 
 @remove_srm_relations
-go-to: edit_sr_relations
+go-to: remove_party_relations
 on-arrival: m_sr_relation -= 10;
 
 @add_srb_relations
-go-to: edit_sr_relations
+go-to: add_party_relations
 on-arrival: b_sr_relation += 10;
 
 @remove_srb_relations
-go-to: edit_sr_relations
+go-to: remove_party_relations
 on-arrival: b_sr_relation -= 10;
 
 @add_mb_relations
+go-to: add_party_relations
 on-arrival: m_b_relation += 10;
 
 @remove_mb_relations
+go-to: remove_party_relations
 on-arrival: m_b_relation -= 10;
 
 @return_relations
