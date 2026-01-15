@@ -11,6 +11,7 @@ go-to: sandbox_menu
 - @edit_resources: Edit Party Resources
 - @edit_military: Edit the Military
 - @edit_relations: Edit Relations
+- @edit_factions: Edit Party Factions
 - @return_home: Return to Home
 
 @edit_budget
@@ -1412,6 +1413,324 @@ on-arrival: m_b_relation -= 10;
 
 @return_relations
 go-to:edit_relations
+
+@edit_factions
+
+-@edit_k_factions: Edit Kadet Factions
+-@edit_sr_factions: Edit SR Factions
+-@edit_m_factions: Edit Menshevik Factions
+-@edit_b_factions: Edit Bolshevik Factions
+-@sandbox_back: Back to Sandbox Menu
+
+
+@edit_k_factions
+
+-@edit_rk: Edit Right Kadets
+-@edit_lk: Edit Left Kadets
+-@faction_back: Back to Faction Menu
+
+@edit_rk
+
+-@add_rk_strength: Add Right Strength
+-@remove_rk_strength: Remove Right Strength
+-@add_rk_dissent: Add Right Dissent
+-@remove_rk_dissent: Remove Right Dissent
+-@kadet_back: Back To Kadet Factions
+
+@add_rk_strength
+go-to: edit_rk
+on-arrival: right_kadet_strength += 10;
+
+@remove_rk_strength
+go-to: edit_rk
+on-arrival: right_kadet_strength -= 10;
+
+@add_rk_dissent
+go-to: edit_rk
+on-arrival: right_kadet_dissent += 10;
+
+@remove_rk_dissent
+go-to: edit_rk
+on-arrival: right_kadet_dissent -= 10;
+
+@edit_lk
+
+-@add_lk_strength: Add Left Strength
+-@remove_lk_strength: Remove Left Strength
+-@add_lk_dissent: Add Left Dissent
+-@remove_lk_dissent: Remove Left Dissent
+-@kadet_back: Back To Kadet Factions
+
+@add_lk_strength
+go-to: edit_lk
+on-arrival: left_kadet_strength += 10;
+
+@remove_lk_strength
+go-to: edit_lk
+on-arrival: left_kadet_strength -= 10;
+
+@add_lk_dissent
+go-to: edit_lk
+on-arrival: left_kadet_dissent += 10;
+
+@remove_lk_dissent
+go-to: edit_lk
+on-arrival: left_kadet_dissent -= 10;
+
+@edit_sr_factions
+
+-@edit_rsr: Edit Right Sr's
+-@edit_csr: Edit Center Sr's
+-@edit_lsr: Edit Left Sr's
+-@faction_back: Back to Faction Menu
+
+@edit_rsr
+
+-@add_rsr_strength: Add Right Strength
+-@remove_rsr_strength: Remove Right Strength
+-@add_rsr_dissent: Add Right Dissent
+-@remove_rsr_dissent: Remove Right Dissent
+-@sr_back: Back to SR Factions
+
+
+@add_rsr_strength
+go-to: edit_rsr
+on-arrival: right_sr_strength += 10;
+
+@remove_rsr_strength
+go-to: edit_rsr
+on-arrival: right_sr_strength -= 10;
+
+@add_rsr_dissent
+go-to: edit_rsr
+on-arrival: right_sr_dissent += 10;
+
+@remove_rsr_dissent
+go-to: edit_rsr
+on-arrival: right_sr_dissent -= 10;
+
+@edit_csr
+
+-@add_csr_strength: Add Center Strength
+-@remove_csr_strength: Remove Center Strength
+-@add_csr_dissent: Add Center Dissent
+-@remove_csr_dissent: Remove Center Dissent
+-@sr_back: Back to SR Factions
+
+@add_csr_strength
+go-to: edit_csr
+on-arrival: center_sr_strength += 10;
+
+@remove_csr_strength
+go-to: edit_csr
+on-arrival: center_sr_strength -= 10;
+
+@add_csr_dissent
+go-to: edit_csr
+on-arrival: center_sr_dissent += 10;
+
+@remove_csr_dissent
+go-to: edit_csr
+on-arrival: center_sr_dissent -= 10;
+
+@edit_lsr
+
+-@add_lsr_strength: Add Left Strength
+-@remove_lsr_strength: Remove Left Strength
+-@add_lsr_dissent: Add Left Dissent
+-@remove_lsr_dissent: Remove Left Dissent
+-@sr_back: Back to SR Factions
+
+@add_lsr_strength
+go-to: edit_lsr
+on-arrival: left_sr_strength += 10;
+
+@remove_lsr_strength
+go-to: edit_lsr
+on-arrival: left_sr_strength -= 10;
+
+@add_lsr_dissent
+go-to: edit_lsr
+on-arrival: left_sr_dissent += 10;
+
+@remove_lsr_dissent
+go-to: edit_lsr
+on-arrival: left_sr_dissent -= 10;
+
+@edit_m_factions
+
+-@edit_msp: Edit Social-Patriots
+-@edit_md: Edit Defensists
+-@edit_mi: Edit Internationalists
+-@faction_back: Back to Faction Menu
+
+@edit_msp
+
+-@add_msp_strength: Add Social Patriot Strength
+-@remove_msp_strength: Remove Social Patriot Strength
+-@add_msp_dissent: Add Social Patriot Dissent
+-@remove_msp_dissent: Remove Social Patriot Dissent
+-@menshevik_back: Back to Menshevik Factions
+
+@add_msp_strength
+go-to: edit_msp
+on-arrival: social_patriot_strength += 10;
+
+@remove_msp_strength
+go-to: edit_msp
+on-arrival: social_patriot_strength -= 10;
+
+@add_msp_dissent
+go-to: edit_msp
+on-arrival: social_patriot_dissent += 10;
+
+@remove_msp_dissent
+go-to: edit_msp
+on-arrival: social_patriot_dissent -= 10;
+
+@edit_md
+
+-@add_md_strength: Add Defensist Strength
+-@remove_md_strength: Remove Defensist Strength
+-@add_md_dissent: Add Defensist Dissent
+-@remove_md_dissent: Remove Defensist Dissent
+-@menshevik_back: Back to Menshevik Factions
+
+@add_md_strength
+go-to: edit_md
+on-arrival: defensist_strength += 10;
+
+@remove_md_strength
+go-to: edit_md
+on-arrival: defensist_strength -= 10;
+
+@add_md_dissent
+go-to: edit_md
+on-arrival: defensist_dissent += 10;
+
+@remove_md_dissent
+go-to: edit_md
+on-arrival: defensist_dissent -= 10;
+
+@edit_mi
+
+-@add_mi_strength: Add Internationalist Strength
+-@remove_mi_strength: Remove Internationalist Strength
+-@add_mi_dissent: Add Internationalist Dissent
+-@remove_mi_dissent: Remove Internationalist Dissent
+-@menshevik_back: Back to Menshevik Factions
+
+@add_mi_strength
+go-to: edit_mi
+on-arrival: internationalist_strength += 10;
+
+@remove_mi_strength
+go-to: edit_mi
+on-arrival: internationalist_strength -= 10;
+
+@add_mi_dissent
+go-to: edit_mi
+on-arrival: internationalist_dissent += 10;
+
+@remove_mi_dissent
+go-to: edit_mi
+on-arrival: internationalist_dissent -= 10;
+
+@edit_b_factions
+
+-@edit_bm: Edit Moderates
+-@edit_bc: Edit Center
+-@edit_bl: Edit Leninists
+-@faction_back: Back to Faction Menu
+
+@edit_bm
+
+-@add_bm_strength: Add Moderate Strength
+-@remove_bm_strength: Remove Moderate Strength
+-@add_bm_dissent: Add Moderate Dissent
+-@remove_bm_dissent: Remove Moderate Dissent
+-@bolshevik_back: Back to Bolshevik Faction's
+
+@add_bm_strength
+go-to: edit_bm
+on-arrival: moderate_strength += 10;
+
+@remove_bm_strength
+go-to: edit_bm
+on-arrival: moderate_strength -= 10;
+
+@add_bm_dissent
+go-to: edit_bm
+on-arrival: moderate_dissent += 10;
+
+@remove_bm_dissent
+go-to: edit_bm
+on-arrival: moderate_dissent -= 10;
+
+@edit_bc
+
+-@add_bc_strength: Add Center Strength
+-@remove_bc_strength: Remove Center Strength
+-@add_bc_dissent: Add Center Dissent
+-@remove_bc_dissent: Remove Center Dissent
+-@bolshevik_back: Back to Bolshevik Faction's
+
+@add_bc_strength
+go-to: edit_bc
+on-arrival: center_strength += 10;
+
+@remove_bc_strength
+go-to: edit_bc
+on-arrival: center_strength -= 10;
+
+@add_bc_dissent
+go-to: edit_bc
+on-arrival: center_dissent += 10;
+
+@remove_bc_dissent
+go-to: edit_bc
+on-arrival: center_dissent -= 10;
+
+@edit_bl
+
+-@add_bl_strength: Add Leninist Strength
+-@remove_bl_strength: Remove Leninist Strength
+-@add_bl_dissent: Add Leninist Dissent
+-@remove_bl_dissent: Remove Leninist Dissent
+-@bolshevik_back: Back to Bolshevik Faction's
+
+@add_bl_strength
+go-to: edit_bl
+on-arrival: leninist_strength += 10;
+
+@remove_bl_strength
+go-to: edit_bl
+on-arrival: leninist_strength -= 10;
+
+@add_bl_dissent
+go-to: edit_bl
+on-arrival: leninist_dissent += 10;
+
+@remove_bl_dissent
+go-to: edit_bl
+on-arrival: leninist_dissent -= 10;
+
+@kadet_back
+go-to: edit_k_factions
+
+@sr_back
+go-to: edit_sr_factions
+
+@menshevik_back
+go-to: edit_m_factions
+
+@bolshevik_back
+go-to: edit_b_factions
+
+
+
+@faction_back
+go-to: edit_factions
 
 @sandbox_back
 go-to: sandbox_menu
