@@ -8,6 +8,7 @@ go-to: sandbox_menu
 @sandbox_menu
 
 - @edit_budget: Edit the Budget
+- @edit_resources: Edit Party Resources
 - @edit_military: Edit the Military
 - @return_home: Return to Home
 
@@ -54,6 +55,192 @@ on-arrival: budget -= 100;
 @remove500budget
 go-to: edit_budget
 on-arrival: budget -= 500;
+
+@edit_resources
+
+-@edit_k_resources: Edit Kadet Resources
+-@edit_sr_resources: Edit SR Resources
+-@edit_m_resources: Edit Menshevik Resources
+-@edit_b_resources: Edit Bolshevik Resources
+
+@edit_k_resources
+
+- @add1_k_budget: Add 1 Resource 
+- @add10_k_budget: Add 10 Resources
+- @add100_k_budget: Add 100 Resources
+- @add500_k_budget: Add 500 Resources
+- @remove1_k_budget: Remove 1 Resource
+- @remove10_k_budget: Remove 10 Resources
+- @remove100_k_budget: Remove 100 Resources
+- @remove500_k_budget: Remove 500 Resources
+- @sandbox_back: Back to Sandbox
+
+@add1_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources += 1;
+
+@add10_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources += 10;
+
+@add100_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources += 100;
+
+@add500_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources += 500;
+
+@remove1_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources -= 1;
+
+@remove10_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources -= 10;
+
+@remove100_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources -= 100;
+
+@remove500_k_budget
+go-to: edit_k_resources
+on-arrival: k_resources -= 500;
+
+@edit_sr_resources
+
+- @add1_sr_budget: Add 1 Resource 
+- @add10_sr_budget: Add 10 Resources
+- @add100_sr_budget: Add 100 Resources
+- @add500_sr_budget: Add 500 Resources
+- @remove1_sr_budget: Remove 1 Resource
+- @remove10_sr_budget: Remove 10 Resources
+- @remove100_sr_budget: Remove 100 Resources
+- @remove500_sr_budget: Remove 500 Resources
+- @sandbox_back: Back to Sandbox
+
+@add1_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources += 1;
+
+@add10_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources += 10;
+
+@add100_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources += 100;
+
+@add500_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources += 500;
+
+@remove1_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources -= 1;
+
+@remove10_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources -= 10;
+
+@remove100_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources -= 100;
+
+@remove500_sr_budget
+go-to: edit_sr_resources
+on-arrival: sr_resources -= 500;
+
+@edit_m_resources
+
+- @add1_m_budget: Add 1 Resource 
+- @add10_m_budget: Add 10 Resources
+- @add100_m_budget: Add 100 Resources
+- @add500_m_budget: Add 500 Resources
+- @remove1_m_budget: Remove 1 Resource
+- @remove10_m_budget: Remove 10 Resources
+- @remove100_m_budget: Remove 100 Resources
+- @remove500_m_budget: Remove 500 Resources
+- @sandbox_back: Back to Sandbox
+
+@add1_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources += 1;
+
+@add10_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources += 10;
+
+@add100_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources += 100;
+
+@add500_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources += 500;
+
+@remove1_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources -= 1;
+
+@remove10_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources -= 10;
+
+@remove100_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources -= 100;
+
+@remove500_m_budget
+go-to: edit_m_resources
+on-arrival: m_resources -= 500;
+
+@edit_b_resources
+
+- @add1_b_budget: Add 1 Resource 
+- @add10_b_budget: Add 10 Resources
+- @add100_b_budget: Add 100 Resources
+- @add500_b_budget: Add 500 Resources
+- @remove1_b_budget: Remove 1 Resource
+- @remove10_b_budget: Remove 10 Resources
+- @remove100_b_budget: Remove 100 Resources
+- @remove500_b_budget: Remove 500 Resources
+- @sandbox_back: Back to Sandbox
+
+@add1_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources += 1;
+
+@add10_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources += 10;
+
+@add100_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources += 100;
+
+@add500_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources += 500;
+
+@remove1_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources -= 1;
+
+@remove10_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources -= 10;
+
+@remove100_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources -= 100;
+
+@remove500_b_budget
+go-to: edit_b_resources
+on-arrival: b_resources -= 500;
+
+
+
 
 @edit_military
 
