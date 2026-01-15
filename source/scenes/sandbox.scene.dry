@@ -1410,19 +1410,19 @@ on-arrival: b_k_relation -= 10;
 
 @add_srm_relations
 go-to: edit_sr_relations
-on-arrival: sr_m_relation += 10;
+on-arrival: m_sr_relation += 10;
 
 @remove_srm_relations
 go-to: edit_sr_relations
-on-arrival: sr_m_relation -= 10;
+on-arrival: m_sr_relation -= 10;
 
 @add_srb_relations
 go-to: edit_sr_relations
-on-arrival: sr_b_relation += 10;
+on-arrival: b_sr_elation += 10;
 
 @remove_srb_relations
 go-to: edit_sr_relations
-on-arrival: sr_b_relation -= 10;
+on-arrival: b_sr_elation -= 10;
 
 @add_mb_relations
 on-arrival: m_b_relation += 10;
