@@ -1418,11 +1418,11 @@ on-arrival: m_sr_relation -= 10;
 
 @add_srb_relations
 go-to: edit_sr_relations
-on-arrival: b_sr_elation += 10;
+on-arrival: b_sr_relation += 10;
 
 @remove_srb_relations
 go-to: edit_sr_relations
-on-arrival: b_sr_elation -= 10;
+on-arrival: b_sr_relation -= 10;
 
 @add_mb_relations
 on-arrival: m_b_relation += 10;
