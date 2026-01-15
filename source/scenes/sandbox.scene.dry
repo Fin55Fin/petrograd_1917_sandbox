@@ -1302,7 +1302,7 @@ go-to: edit_strength
 
 -@edit_inter_relations: Edit International Relations 
 -@add_party_relations: Add Party Relations
--@removeparty_relations: Remove Party Relations
+-@remove_party_relations: Remove Party Relations
 -@sandbox_back: Return to Sandbox Menu
 
 @edit_inter_relations
