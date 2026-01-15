@@ -10,6 +10,7 @@ go-to: sandbox_menu
 - @edit_budget: Edit the Budget
 - @edit_resources: Edit Party Resources
 - @edit_military: Edit the Military
+- @edit_relations
 - @return_home: Return to Home
 
 @edit_budget
@@ -1296,6 +1297,24 @@ go-to: edit_military
 
 @return_editstrength
 go-to: edit_strength
+
+@edit_relations
+
+-@edit_intrelations: Edit International Relations
+[? if player_party == "k": -@edit_k_relations: Edit Party Relations ]
+
+@edit_k_relations
+
+-@edit_km_relations: Edit Menshevik Relations
+
+@edit_km_relations
+
+-@add10_km_relations: Add 10 Menshevik Relations
+
+@add10_km_relations
+go-to: edit_km_relations
+on-arrival: m_relation +=10
+
 
 @sandbox_back
 go-to: sandbox_menu
