@@ -1298,24 +1298,79 @@ go-to: edit_military
 @return_editstrength
 go-to: edit_strength
 
-@sandbox_back
-go-to: sandbox_menu
-
 @edit_relations
 
--@edit_k_relations: Edit Party Relations (For Kadets)
+-@edit_inter_relations: Edit International Relations 
+-@edit_k_relations: Edit Relations for Kadets
+-@sandbox_back: Return to Sandbox Menu
+
+@edit_inter_relations
+
+-@add_west_relations: Add West Relations
+-@remove_west_relations: Remove West Relations
+-@add_usa_relations: Add US Relations
+-@remove_usa_relations: Remove US Relations
+-@return_relations: Return to Relations Page
+
+@add_west_relations
+go-to: edit_inter_relations
+on-arrival: west_relation += 10;
+
+@remove_west_relations
+go-to: edit_inter_relations
+on-arrival: west_relation -= 10;
+
+@add_usa_relations
+go-to: edit_inter_relations
+on-arrival: usa_relation += 10;
+
+@remove_usa_relations
+go-to: edit_inter_relations
+on-arrival: usa_relation -= 10;
+
+
 
 @edit_k_relations
 
--@edit_km_relations: Edit Menshevik Relations
+-@add_kc_relations: Add Kadet-Conservative Relations
+-@remove_kc_relations: Remove Kadet-Conservative Relations
+-@add_km_relations: Add Kadet-Menshevik Relations
+-@remove_km_relations: Remove Kadet-Menshevik Relations
+-@add_ksr_relations: Add Kadet-SR Relations
+-@remove_ksr_relations: Remove Kadet-SR Relations
+-@add_kb_relations: Add Kadet-Bolshevik Relations
+-@remove_kb_relations: Remove Kadet-Bolshevik Relations
+-@return_relations: Return to Relations Page
 
-@edit_km_relations
+@add_kc_relations
+go-to: edit_k_relations
+on-arrival: k_conservative_relation += 10;
 
--@add10_km_relations: Add 10 Menshevik Relations
+@remove_kc_relations
+go-to: edit_k_relations
+on-arrival: k_conservative_relation -= 10;
 
-@add10_km_relations
-go-to: edit_km_relations
-on-arrival: m_k_relation += 10;
+@add_ksr_relations
+go-to: edit_k_relations
+on-arrival: sr_k_relation += 10;
+
+@remove_ksr_relations
+go-to: edit_k_relations
+on-arrival: sr_k_relation -= 10;
+
+@add_kb_relations
+go-to: edit_k_relations
+on-arrival: b_k_relation += 10;
+
+@remove_kb_relations
+go-to: edit_k_relations
+on-arrival: b_k_relation -= 10;
+
+@return_relations
+go-to:edit_relations
+
+@sandbox_back
+go-to: sandbox_menu
 
 @return_home
 go-to: root
