@@ -1301,7 +1301,7 @@ go-to: edit_strength
 @edit_relations
 
 -@edit_intrelations: Edit International Relations
-[? if player_party == "k": -@edit_k_relations: Edit Party Relations ]
+-[? if player_party == "k": @edit_k_relations: Edit Party Relations ]
 
 @edit_k_relations
 
