@@ -1298,6 +1298,9 @@ go-to: edit_military
 @return_editstrength
 go-to: edit_strength
 
+@sandbox_back
+go-to: sandbox_menu
+
 @edit_relations
 
 -@edit_k_relations: Edit Party Relations (For Kadet0
@@ -1313,10 +1316,6 @@ go-to: edit_strength
 @add10_km_relations
 go-to: edit_km_relations
 on-arrival: m_relation +=10
-
-
-@sandbox_back
-go-to: sandbox_menu
 
 @return_home
 go-to: root
