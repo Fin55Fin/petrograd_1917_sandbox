@@ -1350,6 +1350,14 @@ on-arrival: k_conservative_relation += 10;
 go-to: edit_k_relations
 on-arrival: k_conservative_relation -= 10;
 
+@add_km_relations
+go-to: edit_k_relations
+on-arrival: m_k_relation += 10;
+
+@remove_km_relations
+go-to: edit_k_relations
+on-arrival: m_k_relation -= 10;
+
 @add_ksr_relations
 go-to: edit_k_relations
 on-arrival: sr_k_relation += 10;
