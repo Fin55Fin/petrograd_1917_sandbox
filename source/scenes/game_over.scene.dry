@@ -61,6 +61,7 @@ if (Q.monthly_inflation < 3) {
 
 - #endings
 - @end_game: End game.
+- @root: Keep Playing (Added by sandbox, probably buggy)
 
 @ca_held
 title: Constituent Assembly elections held!
