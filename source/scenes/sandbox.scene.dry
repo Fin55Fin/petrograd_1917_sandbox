@@ -12,6 +12,7 @@ go-to: sandbox_menu
 - @edit_military: Edit the Military
 - @edit_relations: Edit Relations
 - @edit_factions: Edit Party Factions
+- @edit_security: Edit Internal Security, Unrest, Crime and Militias
 - @return_home: Return to Home
 
 @edit_budget
@@ -1727,10 +1728,23 @@ go-to: edit_m_factions
 @bolshevik_back
 go-to: edit_b_factions
 
-
-
 @faction_back
 go-to: edit_factions
+
+@edit_security
+
+-@edit_militia_strength: Edit Militia Strength
+-@edit_militia_loyalty: Edit Militia Loyalty
+-@edit_unrest: Edit Unrest
+-@edit_crime: Edit Crime
+-@sandbox_back: Back to Sandbox Menu
+
+@edit_militia_strength
+
+-@edit_p_garrison_strength: Edit the Petrograd Garrison's Strength
+-@edit_c_militia_strength: Edit the City Militia Strength
+-@edit_w_militia_strength: Edit the Worker Militia Strength
+-@edit_r_militia_strength: Edit the Rural Militia Strength
 
 @sandbox_back
 go-to: sandbox_menu
