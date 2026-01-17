@@ -13,6 +13,7 @@ go-to: sandbox_menu
 - @edit_relations: Edit Relations
 - @edit_factions: Edit Party Factions
 - @edit_security: Edit Internal Security, Unrest, Crime and Militias
+- @edit_economy: Edit the Economy and Food
 - @return_home: Return to Home
 
 @edit_budget
@@ -1990,6 +1991,51 @@ on-arrival: soldier_unrest -= 10;
 
 @security_back
 go-to: edit_security
+
+@edit_economy
+
+- @raise_inflation: Raise Monthly Inflation by 1
+- @no_inflation: Set Inflation to 0
+- @high_foodproduction: Set Food Production to 250,000
+- @base_foodprodiction: Set Food Production to 134,000 (Base amount) 
+- @low_foodproduction: Set Food Production to 67,000
+- @high_transport: Set Transport Capacity to 300,000
+- @base_transport: Set Transport Capacity to 140,000 (Base amount)d
+- @low_transport: Set Transport Capacity to 70, 000
+- @sandbox_back
+
+@raise_inflation
+go-to: edit_economy
+on-arrival: monthly_inflation += 1;
+
+@no_inflation
+go-to: edit_economy
+on-arrival: monthly_inflation = 0;
+
+@high_foodproduction
+go-to: edit_economy
+on-arrival: food_production = 250000;
+
+@base_foodproduction
+go-to: edit_economy
+on-arrival: food_production = 134000;
+
+@low_foodproduction
+go-to: edit_economy
+on-arrival: food_production = 67000;
+
+@high_transport
+go-to: edit_economy
+on-arrival: train_capacity = 300000;
+
+@base_transport
+go-to: edit_economy
+on-arrival: train_capacity = 140000;
+
+@low_transport
+go-to: edit_economy
+on-arrival: train_capacity = 70000;
+
 
 @sandbox_back
 go-to: sandbox_menu
