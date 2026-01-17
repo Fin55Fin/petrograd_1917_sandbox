@@ -1825,6 +1825,122 @@ on-arrival: city_militia_k_loyalty -= 10;
 -@lower_wm_sr
 -@mil_loyalty_back
 
+@raise_pg_sr
+go-to: edit_sr_militia_loyalty
+on-arrival: garrison_sr_loyalty += 10;
+
+@lower_pg_sr
+go-to: edit_sr_militia_loyalty
+on-arrival: garrison_sr_loyalty -= 10;
+
+@raise_cm_sr
+go-to: edit_sr_militia_loyalty
+on-arrival: city_militia_sr_loyalty += 10;
+
+@lower_cm_sr
+go-to: edit_sr_militia_loyalty
+on-arrival: city_militia_sr_loyalty -= 10;
+
+@raise_wm_sr
+go-to: edit_sr_militia_loyalty
+on-arrival: workers_militia_sr_loyalty += 10;
+
+@lower_wm_sr
+go-to: edit_sr_militia_loyalty
+on-arrival: workers_militia_sr_loyalty -= 10;
+
+@edit_m_militia_loyalty
+
+-@raise_pg_m
+-@lower_pg_m
+-@raise_cm_m
+-@lower_cm_m
+-@raise_wm_m
+-@lower_wm_m
+-@mil_loyalty_back
+
+@raise_pg_m
+go-to: edit_m_militia_loyalty
+on-arrival: garrison_m_loyalty += 10;
+
+@lower_pg_m
+go-to: edit_m_militia_loyalty
+on-arrival: garrison_m_loyalty -= 10;
+
+@raise_cm_m
+go-to: edit_m_militia_loyalty
+on-arrival: city_militia_m_loyalty += 10;
+
+@lower_cm_m
+go-to: edit_m_militia_loyalty
+on-arrival: city_militia_m_loyalty -= 10;
+
+@raise_wm_m
+go-to: edit_m_militia_loyalty
+on-arrival: workers_militia_m_loyalty += 10;
+
+@lower_wm_m
+go-to: edit_m_militia_loyalty
+on-arrival: workers_militia_m_loyalty -= 10;
+
+@edit_b_militia_loyalty
+
+-@raise_pg_b
+-@lower_pg_b
+-@raise_wm_b
+-@lower_wm_b
+-@mil_loyalty_back
+
+@raise_pg_b
+go-to: edit_b_militia_loyalty
+on-arrival: garrison_b_loyalty += 10;
+
+@lower_pg_b
+go-to: edit_b_militia_loyalty
+on-arrival: garrison_b_loyalty -= 10;
+
+@raise_wm_b
+go-to: edit_b_militia_loyalty
+on-arrival: workers_militia_b_loyalty += 10;
+
+@lower_wm_b
+go-to: edit_b_militia_loyalty
+on-arrival: workers_militia_b_loyalty -= 10;
+
+@edit_ind_militia_loyalty
+
+-@raise_pg_ind
+-@lower_pg_ind
+-@raise_cm_ind
+-@lower_cm_ind
+-@raise_wm_ind
+-@lower_wm_ind
+-@mil_loyalty_back
+
+@raise_pg_ind
+go-to: edit_ind_militia_loyalty
+on-arrival: garrison_independent += 10;
+
+@lower_pg_ind
+go-to: edit_ind_militia_loyalty
+on-arrival: garrison_independent -= 10;
+
+@raise_cm_ind
+go-to: edit_ind_militia_loyalty
+on-arrival: city_militia_independent += 10;
+
+@lower_cm_ind
+go-to: edit_ind_militia_loyalty
+on-arrival: city_militia_independent -= 10;
+
+@raise_wm_ind
+go-to: edit_ind_militia_loyalty
+on-arrival: workers_militia_independent += 10;
+
+@lower_wm_ind
+go-to: edit_ind_militia_loyalty
+on-arrival: workers_militia_independent -= 10;
+
 
 @mil_loyalty_back
 go-to: edit_militia_loyalty
