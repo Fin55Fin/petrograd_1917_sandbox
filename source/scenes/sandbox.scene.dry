@@ -1741,10 +1741,33 @@ go-to: edit_factions
 
 @edit_militia_strength
 
--@edit_p_garrison_strength: Edit the Petrograd Garrison's Strength
--@edit_c_militia_strength: Edit the City Militia Strength
--@edit_w_militia_strength: Edit the Worker Militia Strength
--@edit_r_militia_strength: Edit the Rural Militia Strength
+-@raise_pg_strength: Raise Petrograd Garrison Strength
+-@lower_pg_strength: Lower Petrograd Garrison Strength
+-@raise_cm_strength: Raise City Militia Strength
+-@lower_cm_strength: Lower City Militia Strength
+-@raise_wm_strength: Raise Workers Militia Strength
+-@lower_wm_strength: Lower Workers Militia Strength
+-@raise_rm_strength: Raise Rural Militia Strength
+-@lower_rm_strength: Lower Rural Militia Strength
+
+@raise_pg_strength
+go-to: edit_militia_strength
+on-arrival: garrison_strength += 10;
+
+@lower_pg_strength
+go-to: edit_militia_strength
+on-arrival: garrison_strength -= 10;
+
+@raise_cm_strength
+go-to: edit_militia_strength
+on-arrival: garrison_strength += 10;
+
+@lower_cm_strength
+go-to: edit_militia_strength
+on-arrival: garrison_strength -= 10;
+
+@security_back
+go-to: edit_militia_strength
 
 @sandbox_back
 go-to: sandbox_menu
