@@ -1951,8 +1951,8 @@ go-to: edit_militia_loyalty
 -@lower_crime: Lower Crime
 -@raise_rural_unrest: Raise Rural Unrest
 -@lower_rural_unrest: Lower Rural Unrest
--@raise_labor_unrest: Raise Labor Unrest
--@lower_labor_unrest: Lower Labor Unrest
+-@raise_labor_unrest: Raise Labour Unrest
+-@lower_labor_unrest: Lower Labour Unrest
 -@raise_soldier_unrest: Raise Soldier Unrest
 -@lower_soldier_unrest: Lower Soldier Unrest
 -@security_back: Back to Security Page
@@ -2000,7 +2000,7 @@ go-to: edit_security
 - @base_foodproduction: Set Food Production to 134,000 (Base amount) 
 - @low_foodproduction: Set Food Production to 67,000
 - @high_transport: Set Transport Capacity to 300,000
-- @base_transport: Set Transport Capacity to 140,000 (Base amount)d
+- @base_transport: Set Transport Capacity to 140,000 (Base amount)
 - @low_transport: Set Transport Capacity to 70, 000
 - @sandbox_back: Back to Sandbox
 
