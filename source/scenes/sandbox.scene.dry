@@ -9,7 +9,7 @@ go-to: sandbox_menu
 
 - @edit_budget: Edit the Budget
 - @edit_resources: Edit Party Resources
-- @edit_military: Edit the Military
+- @edit_militiary: Edit the militiary
 - @edit_relations: Edit Relations
 - @edit_factions: Edit Party Factions
 - @edit_security: Edit Internal Security, Unrest, Crime and Militias
@@ -246,7 +246,7 @@ on-arrival: b_resources -= 500;
 
 
 
-@edit_military
+@edit_militiary
 
 - @edit_friendlies: Edit Friendly Stats
 - @edit_strength: Edit Front Strength
@@ -257,7 +257,7 @@ on-arrival: b_resources -= 500;
 -@edit_friendly_discipline: Edit Friendly Discipline
 -@edit_friendly_morale: Edit Friendly Morale
 -@edit_friendly_supply: Edit Friendly Supplies
--@return_military: Back to Military Tab
+-@return_militiary: Back to militiary Tab
 
 @edit_friendly_discipline
 
@@ -353,7 +353,7 @@ on-arrival: supply_quality = 1.0;
 -@edit_southwestern: Edit Southwestern Front
 -@edit_romanian: Edit Romanian Front
 -@edit_caucasus: Edit Caucasus Front
--@return_military: Back to Military Tab
+-@return_militiary: Back to militiary Tab
 
 
 @edit_northern
@@ -1294,8 +1294,8 @@ go-to: edit_caucasus
 @return_friendlies
 go-to: edit_friendlies
 
-@return_military
-go-to: edit_military
+@return_militiary
+go-to: edit_militiary
 
 @return_editstrength
 go-to: edit_strength
@@ -1760,7 +1760,7 @@ on-arrival: garrison_strength -= 10;
 
 @raise_cm_strength
 go-to: edit_militia_strength
-on-arrival: city_milita_strength += 10;
+on-arrival: city_militia_strength += 10;
 
 @lower_cm_strength
 go-to: edit_militia_strength
@@ -1768,7 +1768,7 @@ on-arrival: city_militia_strength -= 10;
 
 @raise_wm_strength
 go-to: edit_militia_strength
-on-arrival: workers_milita_strength += 10;
+on-arrival: workers_militia_strength += 10;
 
 @lower_wm_strength
 go-to: edit_militia_strength
@@ -1776,7 +1776,7 @@ on-arrival: workers_militia_strength -= 10;
 
 @raise_rm_strength
 go-to: edit_militia_strength
-on-arrival: rural_milita_strength += 10;
+on-arrival: rural_militia_strength += 10;
 
 @lower_rm_strength
 go-to: edit_militia_strength
