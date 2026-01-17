@@ -1735,8 +1735,7 @@ go-to: edit_factions
 
 -@edit_militia_strength: Edit Militia Strength
 -@edit_militia_loyalty: Edit Militia Loyalty
--@edit_unrest: Edit Unrest
--@edit_crime: Edit Crime
+-@edit_unrest: Edit Unrest and Crime
 -@sandbox_back: Back to Sandbox Menu
 
 @edit_militia_strength
@@ -1749,6 +1748,7 @@ go-to: edit_factions
 -@lower_wm_strength: Lower Workers Militia Strength
 -@raise_rm_strength: Raise Rural Militia Strength
 -@lower_rm_strength: Lower Rural Militia Strength
+-@security_back: Back to Security Tab
 
 @raise_pg_strength
 go-to: edit_militia_strength
@@ -1760,14 +1760,77 @@ on-arrival: garrison_strength -= 10;
 
 @raise_cm_strength
 go-to: edit_militia_strength
-on-arrival: garrison_strength += 10;
+on-arrival: city_milita_strength += 10;
 
 @lower_cm_strength
 go-to: edit_militia_strength
-on-arrival: garrison_strength -= 10;
+on-arrival: city_militia_strength -= 10;
+
+@raise_wm_strength
+go-to: edit_militia_strength
+on-arrival: workers_milita_strength += 10;
+
+@lower_wm_strength
+go-to: edit_militia_strength
+on-arrival: workers_militia_strength -= 10;
+
+@raise_rm_strength
+go-to: edit_militia_strength
+on-arrival: rural_milita_strength += 10;
+
+@lower_rm_strength
+go-to: edit_militia_strength
+on-arrival: rural_militia_strength -= 10;
+
+@edit_militia_loyalty
+
+-@edit_k_militia_loyalty: Edit Kadet Militia Loyalty
+-@edit_sr_militia_loyalty: Edit SR Militia Loyalty
+-@edit_m_militia_loyalty: Edit Menshevik Militia Loyalty
+-@edit_b_militia_loyalty: Edit Bolshevik Militia Loyalty
+-@edit_ind_militia_loyalty: Edit Militia Independent Loyalty
+-@security_back: Back to Security Tab
+
+@edit_k_militia_loyalty
+
+-@raise_pg_k
+-@lower_pg_k
+-@raise_cm_k
+-@lower_cm_k
+-@mil_loyalty_back
+
+@raise_pg_k
+go-to: edit_k_militia_loyalty
+on-arrival: garrison_k_loyalty += 10;
+
+@lower_pg_k
+go-to: edit_k_militia_loyalty
+on-arrival: garrison_k_loyalty -= 10;
+
+@raise_cm_k
+go-to: edit_k_militia_loyalty
+on-arrival: city_militia_k_loyalty += 10;
+
+@lower_cm_k
+go-to: edit_k_militia_loyalty
+on-arrival: city_militia_k_loyalty -= 10;
+
+@edit_sr_militia_loyalty
+
+-@raise_pg_sr
+-@lower_pg_sr
+-@raise_cm_sr
+-@lower_cm_sr
+-@raise_wm_sr
+-@lower_wm_sr
+-@mil_loyalty_back
+
+
+@mil_loyalty_back
+go-to: edit_militia_loyalty
 
 @security_back
-go-to: edit_militia_strength
+go-to: edit_security
 
 @sandbox_back
 go-to: sandbox_menu
