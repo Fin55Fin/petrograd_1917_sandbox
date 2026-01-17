@@ -1793,11 +1793,11 @@ on-arrival: rural_militia_strength -= 10;
 
 @edit_k_militia_loyalty
 
--@raise_pg_k
--@lower_pg_k
--@raise_cm_k
--@lower_cm_k
--@mil_loyalty_back
+-@raise_pg_k: Raise Petrograd Garrison Kadet Loyalty
+-@lower_pg_k: Lower Petrograd Garrison Kadet Loyalty
+-@raise_cm_k: Raise City Militia Kadet Loyalty
+-@lower_cm_k: Lower City Militia Kadet Loyalty
+-@mil_loyalty_back: Back to Loyalty Page
 
 @raise_pg_k
 go-to: edit_k_militia_loyalty
@@ -1817,13 +1817,13 @@ on-arrival: city_militia_k_loyalty -= 10;
 
 @edit_sr_militia_loyalty
 
--@raise_pg_sr
--@lower_pg_sr
--@raise_cm_sr
--@lower_cm_sr
--@raise_wm_sr
--@lower_wm_sr
--@mil_loyalty_back
+-@raise_pg_sr: Raise Petrograd Garrison SR Loyalty
+-@lower_pg_sr: Lower Petrograd Garrison SR Loyalty
+-@raise_cm_sr: Raise City Militia SR Loyalty
+-@lower_cm_sr: Lower City Militia SR Loyalty
+-@raise_wm_sr: Raise Worker Militia SR Loyalty
+-@lower_wm_sr: Lower Worker Militia SR Loyalty
+-@mil_loyalty_back: Back to Loyalty Page
 
 @raise_pg_sr
 go-to: edit_sr_militia_loyalty
@@ -1851,13 +1851,13 @@ on-arrival: workers_militia_sr_loyalty -= 10;
 
 @edit_m_militia_loyalty
 
--@raise_pg_m
--@lower_pg_m
--@raise_cm_m
--@lower_cm_m
--@raise_wm_m
--@lower_wm_m
--@mil_loyalty_back
+-@raise_pg_m: Raise Petrograd Garrison Menshevik Loyalty
+-@lower_pg_m: Lower Petrograd Garrison Menshevik Loyalty
+-@raise_cm_m: Raise City Militia Menshevik Loyalty
+-@lower_cm_m: Lower City Militia Menshevik Loyalty
+-@raise_wm_m: Raise Worker Militia Menshevik Loyalty
+-@lower_wm_m: Lower Worker Militia Menshevik Loyalty
+-@mil_loyalty_back: Back to Loyalty Page
 
 @raise_pg_m
 go-to: edit_m_militia_loyalty
@@ -1885,11 +1885,11 @@ on-arrival: workers_militia_m_loyalty -= 10;
 
 @edit_b_militia_loyalty
 
--@raise_pg_b
--@lower_pg_b
--@raise_wm_b
--@lower_wm_b
--@mil_loyalty_back
+-@raise_pg_b: Raise Petrograd Garrison Bolshevik Loyalty
+-@lower_pg_b: Lower Petrograd Garrison Bolshevik Loyalty
+-@raise_wm_b: Raise Workers Militia Bolshevik Loyalty
+-@lower_wm_b: Lower Workers Militia Bolshevik Loyalty
+-@mil_loyalty_back: Back to Loyalty Page
 
 @raise_pg_b
 go-to: edit_b_militia_loyalty
@@ -1909,13 +1909,13 @@ on-arrival: workers_militia_b_loyalty -= 10;
 
 @edit_ind_militia_loyalty
 
--@raise_pg_ind
--@lower_pg_ind
--@raise_cm_ind
--@lower_cm_ind
--@raise_wm_ind
--@lower_wm_ind
--@mil_loyalty_back
+-@raise_pg_ind: Raise Petrograd Garrison Independent Loyalty
+-@lower_pg_ind: Lower Petrograd Garrison Independent Loyalty
+-@raise_cm_ind: Raise City Militia Independent Loyalty
+-@lower_cm_ind: Lower City Militia Independent Loyalty
+-@raise_wm_ind: Raise Worker Militia Independent Loyalty
+-@lower_wm_ind: Lower Worker Militia Independent Loyalty
+-@mil_loyalty_back: Back to Loyalty Page
 
 @raise_pg_ind
 go-to: edit_ind_militia_loyalty
@@ -1941,9 +1941,52 @@ on-arrival: workers_militia_independent += 10;
 go-to: edit_ind_militia_loyalty
 on-arrival: workers_militia_independent -= 10;
 
-
 @mil_loyalty_back
 go-to: edit_militia_loyalty
+
+@edit_unrest
+
+-@raise_crime: Raise Crime
+-@lower_crime: Lower Crime
+-@raise_rural_unrest: Raise Rural Unrest
+-@lower_rural_unrest: Lower Rural Unrest
+-@raise_labor_unrest: Raise Labor Unrest
+-@lower_labor_unrest: Lower Labor Unrest
+-@raise_soldier_unrest: Raise Soldier Unrest
+-@lower_soldier_unrest: Lower Soldier Unrest
+-@security_back: Back to Security Page
+
+@raise_crime
+go-to: edit_unrest
+on-arrival: crime += 10;
+
+@lower_crime
+go-to: edit_unrest
+on-arrival: crime -= 10;
+
+@raise_rural_unrest
+go-to: edit_unrest
+on-arrival: rural_unrest += 10;
+
+@lower_rural_unrest
+go-to: edit_unrest
+on-arrival: rural_unrest -= 10;
+
+@raise_labor_unrest
+go-to: edit_unrest
+on-arrival: labor_unrest += 10;
+
+@lower_labor_unrest
+go-to: edit_unrest
+on-arrival: labor_unrest -= 10;
+
+@raise_soldier_unrest
+go-to: edit_unrest
+on-arrival: soldier_unrest += 10;
+
+@lower_soldier_unrest
+go-to: edit_unrest
+on-arrival: soldier_unrest -= 10;
 
 @security_back
 go-to: edit_security
