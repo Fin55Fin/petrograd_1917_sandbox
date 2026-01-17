@@ -2002,7 +2002,7 @@ go-to: edit_security
 - @high_transport: Set Transport Capacity to 300,000
 - @base_transport: Set Transport Capacity to 140,000 (Base amount)d
 - @low_transport: Set Transport Capacity to 70, 000
-- @sandbox_back
+- @sandbox_back: Back to Sandbox
 
 @raise_inflation
 go-to: edit_economy
@@ -2035,7 +2035,6 @@ on-arrival: train_capacity = 140000;
 @low_transport
 go-to: edit_economy
 on-arrival: train_capacity = 70000;
-
 
 @sandbox_back
 go-to: sandbox_menu
