@@ -14,6 +14,7 @@ go-to: sandbox_menu
 - @edit_factions: Edit Party Factions
 - @edit_security: Edit Internal Security, Unrest, Crime and Militias
 - @edit_economy: Edit the Economy and Food
+- @edit_popularity: Edit Party Popularity
 - @return_home: Return to Home
 
 @edit_budget
@@ -2035,6 +2036,30 @@ on-arrival: train_capacity = 140000;
 @low_transport
 go-to: edit_economy
 on-arrival: train_capacity = 70000;
+
+@edit_popularity
+
+- @edit_b_pop: Edit Bolshevik Popularity
+
+@edit_b_pop
+- @raise_b_pop: Raise Bolshevik Popularity
+- @lower_b_pop: Lower Bolshevik Popularity
+- @pop_back: Back to Party Popularity
+
+@raise_b_pop
+- @raise_b_worker: Raise Bolshevik Worker Support
+- @edit_b_pop: Back to Bolshevik Support
+
+@raise_b_worker
+go-to: raise_b_pop
+on-arrival: workers_b += 10;
+
+
+@lower_b_pop
+- @edit_b_pop: Back to Bolshevik Support
+
+@pop_back
+go-to: edit_popularity
 
 @sandbox_back
 go-to: sandbox_menu
