@@ -2058,7 +2058,7 @@ on-arrival: train_capacity = 70000;
 go-to: raise_b_pop
 on-arrival: workers_b += 10;
 
-@raise_b_middle:
+@raise_b_middle
 go-to: raise_b_pop
 on-arrival: middle_b += 10;
 
