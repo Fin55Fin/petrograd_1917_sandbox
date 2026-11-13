@@ -2044,7 +2044,7 @@ on-arrival: train_capacity = 70000;
 
 @edit_b_pop
 
-- @raise_b_pop: Raise <span style="color: #700000;">**Bolshevik**</span> Popularity
+- @raise_b_pop: Raise Bolshevik Popularity
 - @lower_b_pop: Lower Bolshevik Popularity
 - @pop_back: Back to Party Popularity
 
