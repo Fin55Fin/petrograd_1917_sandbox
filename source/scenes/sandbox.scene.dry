@@ -2040,13 +2040,16 @@ on-arrival: train_capacity = 70000;
 @edit_popularity
 
 - @edit_b_pop: Edit Bolshevik Popularity
+- @sandbox_back: Back to Sandbox
 
 @edit_b_pop
+
 - @raise_b_pop: Raise Bolshevik Popularity
 - @lower_b_pop: Lower Bolshevik Popularity
 - @pop_back: Back to Party Popularity
 
 @raise_b_pop
+
 - @raise_b_worker: Raise Bolshevik Worker Support
 - @edit_b_pop: Back to Bolshevik Support
 
@@ -2055,6 +2058,7 @@ go-to: raise_b_pop
 on-arrival: workers_b += 10;
 
 @lower_b_pop
+
 - @lower_b_worker: Lower Bolshevik Worker Suppor
 - @edit_b_pop: Back to Bolshevik Support
 
