@@ -327,7 +327,7 @@ Executive committee: [? if m_in_exco: Mensheviks, ?] [? if sr_in_exco: SRs ?] [?
 
 Overal composition:
 Mensheviks: [+ m_soviet +]%
-Bolsheviks: [+ b_soviet +]%
+<span style="color: #700000;">**Bolshevik**</span>: [+ b_soviet +]%
 SRs: [+ sr_soviet +]%
 Anarchists: [+ anarchist_soviet +]%
 Others: [+ other_soviet +]%
